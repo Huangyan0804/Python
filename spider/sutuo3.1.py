@@ -2,6 +2,18 @@ import re
 import requests
 from prettytable import PrettyTable
 
+'''
+   
+   素拓分快速查询程序，
+   运行前请在下方输入自己的账号和密码，
+   确保网络为校园内网并运行程序快速查看。
+   由于中英文字体宽度原因，显示结果不会对齐，强迫症者见谅。
+    
+'''
+
+user = "2018030402055"  # 此处修改账号
+psw = "252614"  # 此处修改密码
+
 
 user_agent = {
     'Host': 'cas.zsc.edu.cn',
@@ -12,7 +24,7 @@ user_agent = {
 }
 
 
-def login(sess):
+def login(sess, account, password):
     url = 'https://cas.zsc.edu.cn/login?service=http%3A%2F%2F210.38.224.229%2Fsuzhi%2FCASLogin'
     response = sess.get(url, headers=user_agent)
     cookie = response.cookies
@@ -21,8 +33,8 @@ def login(sess):
     lt = re.findall(re.compile(r'<input type="hidden" name="lt" value="(.*?)" />', re.S), page_source)[0]
     et = re.findall(re.compile(r'<input type="hidden" name="execution" value="(.*?)" />', re.S), page_source)[0]
     login_data = {
-        'username': '2018030402055',
-        'password': '252614',
+        'username': account,
+        'password': password,
         'lt': lt,
         'execution': et,
         '_eventId': 'submit'
@@ -85,8 +97,9 @@ def parse_score_page(sess):
 
 
 def main():
+
     sess = requests.session()
-    cookie = login(sess)
+    cookie = login(sess, user, psw)
     page_source = get_content(sess, cookie)
     table = parse_list_page(page_source)
     score = parse_score_page(sess)
