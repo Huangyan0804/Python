@@ -2,7 +2,7 @@
 
 from bs4 import BeautifulSoup
 import requests
-
+import re
 '''
     查询成绩小程序，下方填写账号密码即可一键查询
     使用前务必先安装好必要的python包
@@ -53,7 +53,7 @@ class Spider:
                 enc4 = 64
             output = output + self.keyStr[enc1] + self.keyStr[enc2] \
                 + self.keyStr[enc3] + self.keyStr[enc4]
-            if i > len(inputs):
+            if i >= len(inputs):
                 break
         return output
 
@@ -70,31 +70,50 @@ class Spider:
 
     def get_page(self, r_session):
         response = r_session.get(self.score_url, headers=self.header)
-        return response.text
+        # print(response.text)
+        text = response.text
+        login_status = False
+        if re.match(re.compile('.*请先登录系统.*', re.S), text) is None:
+            login_status = True
+        print(login_status)
+        #print(text)
+        return login_status, text
 
     def parse_page(self, page):
         b_soup = BeautifulSoup(page, 'lxml')
         raw_form = b_soup.find_all('tr')
         n = 1
+        list = []
         for raw_row in raw_form:
             if n != 3:
                 n += 1
                 continue
             one_row = raw_row.find_all('td')
+            smalllist = []
             for data in one_row:
                 if len(str(data.string).strip()) == 0:
-                    print("None", end=' |')
+                    # print("None", end=' |')
+                    smalllist.append(str("None"))
                 else:
-                    print(str(data.string).strip(), end=' |')
-            print('')
-            print('-' * 50)
+                    #print(str(data.string).strip(), end=' |')
+                    smalllist.append(str(data.string))
 
+            list.append(smalllist)
+            #print('')
+
+            #print('-' * 50)
+        return list
 
 def main():
     spider = Spider()
     login_session = spider.login(UserId, PassWd)
-    page = spider.get_page(login_session)
-    spider.parse_page(page)
+    status, page = spider.get_page(login_session)
+    if not status:
+        print('login error')
+        #print(page)
+        return
+    list = spider.parse_page(page)
+    print(list)
 
 
 if __name__ == '__main__':

@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db4fd177-025b-4d42-ad28-529a5ae24eb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TinyBrowser/browser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebServer/plain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebServer/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/01-bs4_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/score_fetch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TinyBrowser/gui-scoreFetch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/re-test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/score-fetch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/SchoolWeb.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/sutuo3.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/sutuo3.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TinyBrowser/browser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/score_fetch.py" beforeDir="false" afterPath="$PROJECT_DIR$/TinyBrowser/scoreFetch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +37,23 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TinyBrowser" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
   </component>
-  <component name="RunManager" selected="Python.score_fetch">
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="Python" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="Python" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TinyBrowser" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.gui-scoreFetch">
     <configuration name="01-bs4_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,7 +75,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="browser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="gui-scoreFetch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,7 +87,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TinyBrowser/browser.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TinyBrowser/gui-scoreFetch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +96,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="score_fetch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="re-test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,7 +108,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/score_fetch.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/re-test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +117,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="score-fetch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,11 +125,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WebServer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WebServer/server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/score-fetch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scoreFetch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TinyBrowser" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TinyBrowser/scoreFetch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,10 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.score_fetch" />
+        <item itemvalue="Python.gui-scoreFetch" />
+        <item itemvalue="Python.scoreFetch" />
+        <item itemvalue="Python.re-test" />
+        <item itemvalue="Python.score-fetch" />
         <item itemvalue="Python.01-bs4_test" />
-        <item itemvalue="Python.browser" />
-        <item itemvalue="Python.server" />
       </list>
     </recent_temporary>
   </component>
@@ -148,60 +180,78 @@
       <option name="presentableId" value="Default" />
       <updated>1580478855161</updated>
     </task>
+    <task id="LOCAL-00001" summary="Mon, 03 Feb 2020 15:25:15 +0800">
+      <created>1580714734491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580714734491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Mon, 03 Feb 2020 15:25:15 +0800" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mon, 03 Feb 2020 15:25:15 +0800" />
   </component>
   <component name="WindowStateProjectService">
     <state x="416" y="57" width="957" height="1118" key="#sutuo3.1" timestamp="1580479659130">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
     <state x="416" y="57" width="957" height="1118" key="#sutuo3.1/0.28.1800.1172@0.28.1800.1172" timestamp="1580479659130" />
-    <state x="589" y="336" key="FileChooserDialogImpl" timestamp="1580624404891">
+    <state x="330" y="116" width="1130" height="1001" key="CommitChangelistDialog2" timestamp="1580714734226">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
-    <state x="589" y="336" key="FileChooserDialogImpl/0.28.1800.1172@0.28.1800.1172" timestamp="1580624404891" />
-    <state width="1761" height="215" key="GridCell.Tab.0.bottom" timestamp="1580712595574">
+    <state x="330" y="116" width="1130" height="1001" key="CommitChangelistDialog2/0.28.1800.1172@0.28.1800.1172" timestamp="1580714734226" />
+    <state x="589" y="336" key="FileChooserDialogImpl" timestamp="1580724571199">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
-    <state width="1761" height="215" key="GridCell.Tab.0.bottom/0.28.1800.1172@0.28.1800.1172" timestamp="1580712595574" />
-    <state width="1761" height="215" key="GridCell.Tab.0.center" timestamp="1580712595573">
+    <state x="589" y="336" key="FileChooserDialogImpl/0.28.1800.1172@0.28.1800.1172" timestamp="1580724571199" />
+    <state width="1761" height="163" key="GridCell.Tab.0.bottom" timestamp="1580733933104">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
-    <state width="1761" height="215" key="GridCell.Tab.0.center/0.28.1800.1172@0.28.1800.1172" timestamp="1580712595573" />
-    <state width="1761" height="215" key="GridCell.Tab.0.left" timestamp="1580712595572">
+    <state width="1761" height="163" key="GridCell.Tab.0.bottom/0.28.1800.1172@0.28.1800.1172" timestamp="1580733933104" />
+    <state width="1761" height="163" key="GridCell.Tab.0.center" timestamp="1580733933104">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
-    <state width="1761" height="215" key="GridCell.Tab.0.left/0.28.1800.1172@0.28.1800.1172" timestamp="1580712595572" />
-    <state width="1761" height="215" key="GridCell.Tab.0.right" timestamp="1580712595573">
+    <state width="1761" height="163" key="GridCell.Tab.0.center/0.28.1800.1172@0.28.1800.1172" timestamp="1580733933104" />
+    <state width="1761" height="163" key="GridCell.Tab.0.left" timestamp="1580733933103">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
-    <state width="1761" height="215" key="GridCell.Tab.0.right/0.28.1800.1172@0.28.1800.1172" timestamp="1580712595573" />
-    <state width="1761" height="361" key="GridCell.Tab.1.bottom" timestamp="1580709526568">
+    <state width="1761" height="163" key="GridCell.Tab.0.left/0.28.1800.1172@0.28.1800.1172" timestamp="1580733933103" />
+    <state width="1761" height="163" key="GridCell.Tab.0.right" timestamp="1580733933104">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
-    <state width="1761" height="361" key="GridCell.Tab.1.bottom/0.28.1800.1172@0.28.1800.1172" timestamp="1580709526568" />
-    <state width="1761" height="361" key="GridCell.Tab.1.center" timestamp="1580709526567">
+    <state width="1761" height="163" key="GridCell.Tab.0.right/0.28.1800.1172@0.28.1800.1172" timestamp="1580733933104" />
+    <state width="1761" height="361" key="GridCell.Tab.1.bottom" timestamp="1580720359544">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
-    <state width="1761" height="361" key="GridCell.Tab.1.center/0.28.1800.1172@0.28.1800.1172" timestamp="1580709526567" />
-    <state width="1761" height="361" key="GridCell.Tab.1.left" timestamp="1580709526566">
+    <state width="1761" height="361" key="GridCell.Tab.1.bottom/0.28.1800.1172@0.28.1800.1172" timestamp="1580720359544" />
+    <state width="1761" height="361" key="GridCell.Tab.1.center" timestamp="1580720359542">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
-    <state width="1761" height="361" key="GridCell.Tab.1.left/0.28.1800.1172@0.28.1800.1172" timestamp="1580709526566" />
-    <state width="1761" height="361" key="GridCell.Tab.1.right" timestamp="1580709526567">
+    <state width="1761" height="361" key="GridCell.Tab.1.center/0.28.1800.1172@0.28.1800.1172" timestamp="1580720359542" />
+    <state width="1761" height="361" key="GridCell.Tab.1.left" timestamp="1580720359542">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
-    <state width="1761" height="361" key="GridCell.Tab.1.right/0.28.1800.1172@0.28.1800.1172" timestamp="1580709526567" />
-    <state x="93" y="64" width="1344" height="910" key="SettingsEditor" timestamp="1580643939858">
+    <state width="1761" height="361" key="GridCell.Tab.1.left/0.28.1800.1172@0.28.1800.1172" timestamp="1580720359542" />
+    <state width="1761" height="361" key="GridCell.Tab.1.right" timestamp="1580720359543">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
-    <state x="93" y="64" width="1344" height="910" key="SettingsEditor/0.28.1800.1172@0.28.1800.1172" timestamp="1580643939858" />
+    <state width="1761" height="361" key="GridCell.Tab.1.right/0.28.1800.1172@0.28.1800.1172" timestamp="1580720359543" />
+    <state x="93" y="64" width="1344" height="910" key="SettingsEditor" timestamp="1580724841398">
+      <screen x="0" y="28" width="1800" height="1172" />
+    </state>
+    <state x="93" y="64" width="1344" height="910" key="SettingsEditor/0.28.1800.1172@0.28.1800.1172" timestamp="1580724841398" />
     <state width="623" height="498" key="SwitcherDM" timestamp="1580534267388">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
     <state width="623" height="498" key="SwitcherDM/0.28.1800.1172@0.28.1800.1172" timestamp="1580534267388" />
+    <state x="395" y="283" width="1000" height="667" key="Vcs.Push.Dialog.v2" timestamp="1580734034603">
+      <screen x="0" y="28" width="1800" height="1172" />
+    </state>
+    <state x="395" y="283" width="1000" height="667" key="Vcs.Push.Dialog.v2/0.28.1800.1172@0.28.1800.1172" timestamp="1580734034603" />
     <state x="474" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1580478861694">
       <screen x="0" y="28" width="1800" height="1172" />
     </state>
