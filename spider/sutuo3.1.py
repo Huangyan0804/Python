@@ -12,8 +12,8 @@ from prettytable import PrettyTable
     
 '''
 
-user = "2018030402001"  # 此处修改账号，默认为自己的学号
-psw = "123456"  # 此处修改密码，默认为身份证后六位
+user = "2018030402055"  # 此处修改账号，默认为自己的学号
+psw = "xxxx"  # 此处修改密码，默认为身份证后六位
 
 
 user_agent = {
