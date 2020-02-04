@@ -104,6 +104,7 @@ class Spider:
             #print('-' * 50)
         return list
 
+
 def main():
     spider = Spider()
     login_session = spider.login(UserId, PassWd)
