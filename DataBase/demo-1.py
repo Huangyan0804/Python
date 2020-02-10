@@ -1,11 +1,11 @@
 import pymysql
 
 db = pymysql.connect(
-    host="172.96.202.192",
-    port=3306,
-    user="root",
-    passwd="Zsqfhy0804#",
-    db="mydatabase"
+    host="xxx",
+    port=xx,
+    user="xx",
+    passwd="xx",
+    db="xx"
 )
 
 cursor = db.cursor()
