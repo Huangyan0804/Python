@@ -14,6 +14,12 @@
 
 ---
 
+## Tesseract-ocr
+
+- 图像识别及训练字符
+
+---
+
 ## FlaskDemo
 
 - 网站框架
